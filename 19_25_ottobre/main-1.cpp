@@ -1,25 +1,25 @@
 /**
- * Andrea FAvero
+ * Andrea Favero
  * 20/10/2015
- * Scrivere un programma che legga 10
- * interi e ne calcoli la somma stampandola su schermo.
+ * Scrivere un programma che legga 10 interi e ne calcoli la somma stampandola su schermo.
  */
 
 #include<iostream>
 using namespace std;
 
 //1 PRE=(cin contiene almeno 10 interi)
-main()
+int main(int argc, char **argv)
 {
-	int i=0, somma=0,x;
-	while( i < 10 ) {	//R =(0<=i<=10, letti i valori da cin, somma contiene 
-						// la somma dei valori letti)
+	int i=0, somma=0, x;
+	while( i < 10 ) {	//R=(0<=i<=10, letti i valori da cin, somma contiene 
+				// la somma dei valori letti)
 		//cout << "Inserisci un intero: ";
 		cin >> x;
 		somma += x;
 		i++;
 	}
 	cout<<"somma="<<somma<<endl;
+	return 0;
 }
 //POST=(letti 10 interi da cin e somma e' la loro somma)
 
@@ -41,9 +41,9 @@ main()
 	3) R && (! i<10) => POST
 		- !i<10 equivalente a i >=10, assieme a R ci dice che i = 10 quindi
 			letti 10 valori da cin, somma contiene somma dei valori letti
-
 */
 
-/*
-Non dimostriamo che il programma termina, dimostrimo che se termina, è
-corretto rispetto alla pre ed alla post*/
+/**
+ * Non dimostriamo che il programma termina, dimostrimo che se termina, è
+ * corretto rispetto alla pre ed alla post
+ */
