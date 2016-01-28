@@ -15,8 +15,8 @@ int main()
 	cin >> n;
 	
 	/**
-	 * R=(letti a valori e somma contiene la somma dei primi
-	 * a-1 valori. L'ultima lettura è in n )
+	 * R=(letti n valori e somma contiene la somma dei primi
+	 * n-1 valori. L'ultima lettura è in n )
 	 */
 	while(n) {
 		somma += n;
