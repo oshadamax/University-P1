@@ -95,8 +95,5 @@ int main(int argc, char const *argv[])
 
 	cout << "la miglior colonna e' " << colmaxmatch << " con " << cmaxmatch << " match";
 
-	// i = i+1 è equivalnete a i++
-	// ++i equivale aumentare di uno subito
-
 	return 0;
 }
