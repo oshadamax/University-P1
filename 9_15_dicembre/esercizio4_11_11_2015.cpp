@@ -1,3 +1,9 @@
+/*
+	NB!: Questo non è il modo migliore per farlo. "È il più semplice da capire" per chi ha iniziato da poco. Ne avevo fatto 
+	un'altra versione (questa volta senza "sprechi" o passaggi in +, con gli invarianti, chiedendo a filè se era giusto.
+	Il problema è che non la trovo più. Se è ancora nel mio computer la carico appena la trovo!
+ */
+
 #include<iostream>
 using namespace std;
 
@@ -50,7 +56,7 @@ int main(int argc, char const *argv[])
 		if (matchcol > cmaxmatch) {
 			cmaxmatch = matchcol;
 			colmaxmatch = i;
-        }
+        	}
 	}
 
 
