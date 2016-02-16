@@ -19,77 +19,56 @@ int main(int argc, char const *argv[])
 	
 
 	for (int i = 0; i < righepiene; i++)
-	{
 		for (int j = 0; j < 5; j++)
-		{
 			cin >> T[i][j];
-		}
-	}
+
 	//nel caso in cui ci fossero altri elementi su una riga, mezza piena
 	for (int i = 0; i < valdefriga; i++)
-	{
 		cin >> T[righepiene][i];
-	}
+		
 	// caricamento array
 	for (int i = 0; i < dimP; i++)
-	{
 		cin >> P[i];
-	}
 	
 
 
 	int colmaxmatch=-1, cmaxmatch=0; 
 	//scorro solo le colonne che hanno lunghezza maggiore
-	for (int i = 0; i < valdefriga; i++)
-	{
+	for (int i = 0; i < valdefriga; i++) {
 		int matchcol = 0;
 		//ciclo che scorre le righe di una colonna
-		for (int j = 0; j <= (righepiene + 1)-dimP; j++)
-		{
+		for (int j = 0; j <= (righepiene + 1)-dimP; j++) {
 			cout << "Sono entrato nel ciclo"<<endl;
 			bool trovatomatch=true;
 			//faccio il match della colonna con l'array di p
 			for(int h=0; (h < dimP) && trovatomatch;h++)
-			{
 				if (P[h]!=T[j+h][i])
 					trovatomatch = false;
-
-			}
 			if (trovatomatch)
 				matchcol++;
 		}
-		if (matchcol > cmaxmatch)
-		{
+		if (matchcol > cmaxmatch) {
 			cmaxmatch = matchcol;
 			colmaxmatch = i;
 		}
 	}
 
 
-	for (int i = valdefriga; i < 5; i++)
-	{
+	for (int i = valdefriga; i < 5; i++) {
 		int matchcol = 0;
 		//ciclo che scorre le righe di una colonna
-		for (int j = 0; j < (righepiene)-dimP; j++)
-		{
+		for (int j = 0; j < (righepiene)-dimP; j++) {
 			bool trovatomatch=true;
 			//faccio il match della colonna con l'array di p
 			for(int h=0; (h < dimP) && trovatomatch;h++)
-			{
 				if (P[h]!=T[j+h][i])
 					trovatomatch = false;
-
-			}
 			if (trovatomatch)
-			{
 				matchcol++;
-			}
 		}
 		if (matchcol > cmaxmatch)
-		{
 			cmaxmatch = matchcol;
 			colmaxmatch = i;
-		}
 	}
 
 
