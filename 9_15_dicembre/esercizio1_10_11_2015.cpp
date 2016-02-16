@@ -19,7 +19,7 @@ int main(int argc, char **argv)
     cin >> dimT;
     /* Un metodo per fare in modo che il valore di dimT sia sempre 0<dimt<=100
     sarebbe quello di aggiungere qui sotto questa parte di codice:
-    while(dimT <= 0 || dimt > 100)
+    while(dimT <= 0 || dimT > 100)
         cin << dimT;
         
     Il Prof. però non vuole perchè nella precondizione è dato per scontato che 
