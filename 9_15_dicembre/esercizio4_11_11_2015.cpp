@@ -50,14 +50,14 @@ int main(int argc, char const *argv[])
 		if (matchcol > cmaxmatch) {
 			cmaxmatch = matchcol;
 			colmaxmatch = i;
-		}
+        }
 	}
 
 
 	for (int i = valdefriga; i < 5; i++) {
 		int matchcol = 0;
 		//ciclo che scorre le righe di una colonna
-		for (int j = 0; j < (righepiene)-dimP; j++) {
+		for (int j = 0; j < (righepiene)-dimP; j++)	{
 			bool trovatomatch=true;
 			//faccio il match della colonna con l'array di p
 			for(int h=0; (h < dimP) && trovatomatch;h++)
@@ -66,13 +66,17 @@ int main(int argc, char const *argv[])
 			if (trovatomatch)
 				matchcol++;
 		}
-		if (matchcol > cmaxmatch)
+		if (matchcol > cmaxmatch) {
 			cmaxmatch = matchcol;
 			colmaxmatch = i;
+		}
 	}
 
 
 	cout << "la miglior colonna e' " << colmaxmatch << " con " << cmaxmatch << " match";
+
+	// i = i+1 è equivalnete a i++
+	// ++i equivale aumentare di uno subito
 
 	return 0;
 }
