@@ -34,20 +34,22 @@ int main()
 	if(OUT) {
 	
 		if(cletto == 'H')
-			for(int i = 0; i < 2; i++)
+			for(int i = 0; i < 2; i++) {
 				for(int j = iletto; j < iletto+1; j++) {
 					for(int h = 0; h < 5; h++)
 						OUT << A[i][j][h] << " ";
 					OUT << endl;
-	            }
+	            		}
+			}
 		
 		if(cletto == 'V' )			
-			for(int i = 0; i < 2; i++)
+			for(int i = 0; i < 2; i++) {
 				for(int j = 0; j < 4; j++) {
 					for(int h = iletto; h < iletto+1; h++)
 						OUT << A[i][j][h] << " ";
 					OUT << endl;
-	            }
+	            		}
+			}
 	} else {
 		return -1;
 	}
