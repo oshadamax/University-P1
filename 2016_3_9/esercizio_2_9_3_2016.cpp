@@ -6,6 +6,8 @@
 #include<iostream>
 #include<fstream>
 
+//i'm oshada hello favero!!
+
 int main()
 {
   int A[2][4][5], n_el, iletto;
