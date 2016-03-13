@@ -3,8 +3,8 @@
   Osha
   13/3/2014
 */
-#include<iostream>
-#include<fstream>
+
+
 
 int main()
 {
